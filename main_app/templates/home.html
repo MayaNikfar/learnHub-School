@@ -1,21 +1,43 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
 
-<div class="section-1 mt-5" style="margin-bottom: 40%;">
-    <div class="container left w-50"  style="padding-left: 10rem;">
-        <h6 class="mt-5">PLAY. EXPLORE. LEARN.</h6>
-        <p class="display-5 fw-bolder text-warning mt-5">A Safe and <br> Joyful Place for Kids</p>
-        <p class="mt-5 fs-5">LearnHub stands as the leading EdTech company <br>where education meets innovation and kids rejoice in success.</p>
-        <button type="submit" class=" btn btn-primary orange border border-0 rounded-pill" style="margin-top: 3%; padding:20px 60px 40px 60px;">Enroll your kid</button>
+<!-- Section One -->
+<div class="section-1" style="padding-top: 3rem;">
+<div class=" left w-50 mt-5">
+  <h6 class="mt-5">PLAY. EXPLORE. LEARN.</h6>
+  <p class="display-5 fw-bolder text-warning mt-5">A Safe and <br> Joyful Place for Kids</p>
+  <p class="mt-5 fs-5">LearnHub stands as the leading EdTech company <br>where education meets innovation and kids rejoice in success.</p>
+  <a href="{% url 'students_create' %}">
+      <button type="submit" class=" btn btn-primary orange border border-0 rounded-pill" style="margin-top: 3%; padding:20px 60px 40px 60px;">Enroll your kid</button>
+  </a>
+  <div style="margin-top: 3rem;">
+  <span class = "fa fa-star checked" style="color: yellow;"></span>
+  <span class = "fa fa-star checked" style="color: yellow;"></span>
+  <span class = "fa fa-star checked" style="color: yellow;"></span>
+  <span class = "fa fa-star checked" style="color: yellow;"></span>
+  <span class = "fa fa-star checked" style="color: yellow;"></span>
+  <h6>4.8 rating on Google</h6>
+</div>
+  <a href="#" class="mt-5 text-black fw-bold" style="text-decoration: none; font-size: 20px;"> 
+  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telephone-inbound-fill text-warning mx-2 " viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zM15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0"/> 
+  </svg>
+   &#43 61 123456789</a>
+</div>
+<div class=" right w-50 mt-5" >
+    <div class="image1">
+      <img src="{% static 'img/img11.jpg' %}" class="rounded-4 w-75" alt="LearnHub" style="height:55vh;">
     </div>
-    <div class="container right w-50">
-        <img src="static/img/img11.jpg" class=" rounded-4" alt="LearnHub" style="margin:3rem 10rem 0 0; height: 60vh; width:70%; ">
-        <img src="static/img/img10.png" class="rounded-4 z-3" style="margin-top: 30rem;">
+    <div  class="image2">
+      <img src="{% static 'img/img10.png' %}" class=" baby rounded-4">
     </div>
 </div>
+</div>
 
-<div class="section-2 " style="padding-top: 20rem;">
-    <div class="container right w-50">
+<!-- Section Two -->
+<div class="section-2">
+    <div class="talent-sec">
         <h6> OUR VISION</h6>
         <p class="display-5 fw-bolder text-warning">"Success does not <br>solely depend on <br> one's level of <br>intelligence."</p>
         <p>No evidence of being successful is based on being smart in any field, especially in academics.
@@ -23,17 +45,19 @@
             Every single young student has uncovered potential and with the right support, they can become the best version of themselves. 
             “Navigating the Path to Success with Resilience, Innovation, and Strategic Brilliance.”
              – Ayush Khaitan, CEO & Founder of LearnHub, – </p>
-        <button type="submit" class=" btn btn-primary orange border border-0 rounded-pill" style="margin-top: 3%; padding:20px 60px 40px 60px;">Know more about Us</button>
+        <button type="submit" class=" btn btn-primary orange border border-0 rounded-pill" style="padding:20px 60px 40px 60px;">Know more about Us</button>
     </div>
-    <div class="container right w-50">
-        <img src="static/img/img9.jpg" class=" rounded-4" alt="LearnHub" style="height: 45vh; margin-right: 7rem; width: 70%;">
+    <div class="container right">
+        <img src="{% static 'img/talent.jpg' %}" class=" rounded-4" alt="LearnHub" style="height: 50vh; width: 40%;">
     </div>
 </div>
+
+<!-- Section Three -->
 <div class="section-3 row" style="margin-top:35rem">
     <div class="container right w-50">
         <h6> WHY US</h6>
         <p class="display-5 fw-bolder text-warning">The best early <br>learning experience</p>
-        <p>Here are just some of the reasons that you’ll love the way we do<br>things at Connect2learn.</p>
+        <p>Here are just some of the reasons that you’ll love the way we do<br>things at LearnHub.</p>
         <ol>
             <li>Simple, Quick and Flexible</li>
             <li>Passionate teachers</li>

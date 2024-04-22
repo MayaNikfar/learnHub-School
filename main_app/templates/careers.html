@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="section-1 mt-5" style="margin-bottom: 40%;">
+{% load static %}
+<div class="section-1" style="margin-bottom: 4%;">
     <div class="container left w-80"  style="padding-left: 10rem;">
         <h6 class="mt-5">NOW GROW YOUR CAREER</h6>
         <p class="display-5 fw-bolder text-warning mt-3">Join Our Team</p>
@@ -13,7 +14,7 @@
     <div class="col">
       <div class="card">
         <div class="card-body">
-            <span class="material-symbols-outlined" style="color:orange;"> calendar_clock </span>
+            <span class="material-symbols-outlined " style="color:orange;"> calendar_clock </span>
           <h5 class="card-title">Flexible Schedule</h5>
           <p class="card-text">You choose your hours! Whether you’re teaching online or in-person, you’re free to change your hours based on your schedule. Just make sure to give your students appropriate warning</p>
         </div>
@@ -47,8 +48,8 @@
       </div>
     </div>
   </div>
-<div class="section-2 "style="margin:5rem 0 5rem 0;">
-    <div class="container right w-50">
+<div class="section-2 " style="margin:5rem 0 0;">
+    <div class="right" style="width: 40%; text-align: left;">
         <p class="display-5 fw-bolder text-warning">Academic Tutor</p>
         <p class="fs-5 mt-4">
             LearnHub.online represents a community of dedicated individuals committed to sharing their wealth of knowledge. More than a tutoring agency, we are a collective of educators passionate about making a meaningful impact.
@@ -59,15 +60,16 @@
             arrow_forward
             </span></button>
     </div>
-    <div class="container right w-50">
-        <img src="static/img/contract.jpg" class=" rounded-4" alt="teacher">
+    <div class="contract-image">
+        <img src="{% static 'img/contract.jpg' %}" class=" contract-image rounded-4" alt="teacher">
     </div>
 </div>
-<div class="section-3 row" style="margin-top:45rem">
+
+<div class="section-3 row" style="margin-top:4rem">
     <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class=" h-100">
-            <img src="static/img/careers.jpg" class="card-img-top" alt="image1">
+            <img src="{%static 'img/careers.jpg' %}" class="card-img-top" alt="image1">
             <div class="body">
               <h5 class="title display-5 fw-bolder text-warning mt-5">History of Academic Success</h5>
               <p class="text">Our tutors have proven themselves to be the best at what they want to teach through their academic history.
@@ -77,7 +79,7 @@
         </div>
         <div class="col">
           <div class=" h-100">
-            <img src="static/img/careers2.jpg" class="card-img-top" alt="image2">
+            <img src="{% static 'img/careers2.jpg' %}" class="card-img-top" alt="image2">
             <div class="body">
               <h5 class="title display-5 fw-bolder text-warning mt-5">100% Satisfaction Guarantee</h5>
               <p class="text">Our tutors are required to have communication skills capable to explaining complex problems and breaking them down into bite sized pieces so that students can understand.
@@ -87,10 +89,10 @@
         </div>
         <div class="col">
           <div class=" h-100">
-            <img src="static/img/careers3.jpg" class="card-img-top" alt="image3">
+            <img src="{% static 'img/careers3-new.png' %}" class="card-img-top" alt="image3">
             <div >
               <h5 class="title display-5 fw-bolder text-warning mt-5">Mentoring Skills</h5>
-              <p class="text">At Connect2learn, we view teaching as so much more than just the marks.
+              <p class="text">At LearnHub, we view teaching as so much more than just the marks.
                 Our tutors are all natural leaders who are able to motivate and inspire their students to do better. They are the kind of people that students will naturally want to get closer with and become, creating a goal to strive towards over their weekly lessons.</p>
             </div>
           </div>
@@ -100,48 +102,48 @@
       <button type="submit" class=" btn btn-primary orange border border-0 rounded-pill mt-5 mb-5" style="width:30%; margin-top:3%; padding:10px 60px 40px 60px; margin-left: 33%;">View All Services <span class="material-symbols-outlined">arrow_forward</span></button>
 </div>
 <div class="section-4">
-    <p class="display-5 fw-bolder text-warning mt-5 text-center ">Tutor's Say About Us</p>
+    <p class="display-5 fw-bolder text-warning mt-5  mb-5 text-center">Tutor's Say About Us</p>
     <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div>
             <div class="body">
-                <span class = "fa fa-star checked text-warning-emphasis"></span>
-                <span class = "fa fa-star checked text-warning-emphasis"></span>
-                <span class = "fa fa-star checked text-warning-emphasis"></span>
-                <span class = "fa fa-star checked text-warning-emphasis"></span>
-                <span class = "fa fa-star checked text-warning-emphasis"></span>
-              <p class="text mt-4">"Hi, I'm Martin Foster, proudly part of Connect2Learn for 2 years. This dynamic education hub in Australia has not only shaped my career but also fostered an environment where success thrives. Join us for a magical journey of growth, where your impact as a teacher creates transformative stories every day."</p>
+                <span class = "fa fa-star checked" style="color: yellow;"></span>
+                <span class = "fa fa-star checked"  style="color: yellow;"></span>
+                <span class = "fa fa-star checked"  style="color: yellow;"></span>
+                <span class = "fa fa-star checked"  style="color: yellow;"></span>
+                <span class = "fa fa-star checked"  style="color: yellow;"></span>
+              <p class="text mt-4">"Hi, I'm Martin Foster, proudly part of LearnHub for 2 years. This dynamic education hub in Australia has not only shaped my career but also fostered an environment where success thrives. Join us for a magical journey of growth, where your impact as a teacher creates transformative stories every day."</p>
             </div>
-            <img src="#" class="img" alt="man-1">
-          </div>
-        </div>
-        <div class="col">
-          <div>
-           
-            <div class="body">
-                <span class = "fa fa-star checked text-warning"></span>
-                <span class = "fa fa-star checked text-warning"></span>
-                <span class = "fa fa-star checked text-warning"></span>
-                <span class = "fa fa-star checked text-warning"></span>
-                <span class = "fa fa-star checked text-warning"></span>
-              <p class="text mt-4">"Hello, I'm Bryan Cirius, thrilled to be part of Connect2Learn for 2 amazing years. This outstanding education hub in Australia not only fueled my career growth but also provided the perfect environment for success. Join us for a transformative journey, where your role as a teacher shapes stories that are nothing short of magical every single day."</p>
-              <img src="..." class="img-top" alt="person">
-            </div>
+           <h5><img src="{% static 'img/customer_man1.jpg' %}" class="review" alt="">Martin Foster</h5>
           </div>
         </div>
         <div class="col">
           <div>
             <div class="body">
-                <span class = "fa fa-star checked text-warning"></span>
-                <span class = "fa fa-star checked text-warning"></span>
-                <span class = "fa fa-star checked text-warning"></span>
-                <span class = "fa fa-star checked text-warning"></span>
-                <span class = "fa fa-star checked text-warning"></span>
-              <p class="text">"Hello, I'm Anamika Sengupto, proudly Indian and grateful to be part of Connect2Learn for the past 3 years. I specialize in teaching math, holding a PhD from IIT Kanpur. Connect2Learn isn't just a teaching platform; it's a supportive community that meets all my professional needs. Thanks to Connect2Learn I'm grateful to be part of this empowering community.."</p>
+                <span class = "fa fa-star checked" style="color: yellow;"></span>
+                <span class = "fa fa-star checked" style="color: yellow;"></span>
+                <span class = "fa fa-star checked" style="color: yellow;"></span>
+                <span class = "fa fa-star checked" style="color: yellow;"></span>
+                <span class = "fa fa-star checked" style="color: yellow;"></span>
+              <p class="text mt-4">"Hello, I'm Bryan Cirius, thrilled to be part of LearnHub for 2 amazing years. This outstanding education hub in Australia not only fueled my career growth but also provided the perfect environment for success. Join us for a transformative journey, where your role as a teacher shapes stories that are nothing short of magical every single day."</p>
+             <h5><img src="{% static 'img/customer_man2.jpg' %}" class="review" alt="">Bryan Cirius</h5>
             </div>
-            <img src="..." class="img-top" alt="woman">
           </div>
         </div>
+        <div class="col">
+          <div>
+            <div class="body">
+                <span class = "fa fa-star checked" style="color: yellow;"></span>
+                <span class = "fa fa-star checked" style="color: yellow;"></span>
+                <span class = "fa fa-star checked" style="color: yellow;"></span>
+                <span class = "fa fa-star checked" style="color: yellow;"></span>
+                <span class = "fa fa-star checked" style="color: yellow;"></span>
+                <p class="text mt-4">"Hello, I'm Anamika Sengupto, proudly Indian and grateful to be part of LearnHub for the past 3 years. I specialize in teaching math, holding a PhD from IIT Kanpur. LearnHub isn't just a teaching platform; it's a supportive community that meets all my professional needs. Thanks to LearnHub I'm grateful to be part of this empowering community.."</p>
+                <h5><img src="{% static 'img/customer_woman.jpg' %}"class="review"  alt=""> Anamika Sengupta</h5>
+            </div>
+          </div>
+    </div>
+    
 </div>
 
 {% endblock %}
