@@ -27,7 +27,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=100)),
-                ('contact_number', models.CharField(max_length=25)),
+                ('_number', models.CharField(max_length=25)),
                 ('age', models.IntegerField()),
                 ('classes', models.ManyToManyField(to='main_app.class')),
                 ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
