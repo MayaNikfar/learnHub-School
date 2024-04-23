@@ -8,7 +8,7 @@
     <div class="card">
       <div class="card-content">
         <span class="card-title">{{ student.name }}</span>
-        <p>Contact Number: {{ student.ContactNumber|linebreaks }}</p>
+        <p>Contact Number: {{ student.contact_number|linebreaks }}</p>
         {% if student.age > 0 %}
           <p>Student Age: {{ student.age }}</p>
         {% else %}

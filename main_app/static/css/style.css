@@ -2,7 +2,6 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background-color: #fbe9e7;
     font-size: 18px;
   }
   
@@ -11,4 +10,8 @@ body {
    
   }
   
-  
+  footer.page-footer {
+    padding: 10px;
+    text-align: right;
+    
+  }

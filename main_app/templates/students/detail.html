@@ -44,11 +44,11 @@
         <div class="card">
           <div class="card-content">
             <span class="card-title">
-              A <span style="group: {{ class.group }}">{{ class.group }}</span> {{ class.name }}
+              A {{ class.name }} {{class.group}}
             </span>
           </div>
           <div class="card-action">
-            <form action="{% url 'unassoc_class' student.id group.id %}" method="POST">
+            <form action="{% url 'unassoc_class' student.id class.id %}" method="POST">
               {% csrf_token %}
               <button type="submit" class="btn">Remove</button>
             </form>

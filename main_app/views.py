@@ -50,7 +50,7 @@ def students_detail(request, student_id):
 
 class StudentCreate(LoginRequiredMixin, CreateView):
   model = Student
-  fields = ['name','contactNumber', 'age']
+  fields = ['name','contact_number', 'age']
 
   def form_valid(self, form):
     # self.request.user is the logged in user
@@ -61,7 +61,7 @@ class StudentCreate(LoginRequiredMixin, CreateView):
 
 class StudentUpdate(LoginRequiredMixin, UpdateView):
   model = Student
-  fields = ['contactNumber', 'age']
+  fields = ['contact_number', 'age']
 
 class StudentDelete(LoginRequiredMixin, DeleteView):
   model = Student
