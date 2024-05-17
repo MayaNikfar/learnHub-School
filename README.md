@@ -8,4 +8,13 @@
 
 # Technology used:
 ## Python
+## Django framework
+## AWS 
+## JavaScript
+## CSS
+## Botstrap
+## HTML
+
+
+
 
